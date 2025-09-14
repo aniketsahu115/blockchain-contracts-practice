@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.19; // stating our version
+pragma solidity ^0.8.24; // stating our version
 
 contract SimpleStorage {
     uint256 myFavoriteNumber; // 0
@@ -16,7 +16,7 @@ contract SimpleStorage {
     mapping(string => uint256) public nameToFavoriteNumber;
  
 
-    function store(uint256 _favoriteNumber) public {
+    function store(uint256 _favoriteNumber) public virtual {
     myFavoriteNumber = _favoriteNumber;
     }
 
@@ -32,3 +32,15 @@ contract SimpleStorage {
     }
 
 }
+
+    contract SimpleStorage2 {
+
+    }
+
+    contract SimpleStorage3 {
+    
+    }
+
+    contract SimpleStorage4 {
+
+    }
